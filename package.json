@@ -1,0 +1,38 @@
+{
+  "name": "secret-santa",
+  "version": "0.0.1",
+  "description": "Secret Santa Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist/*"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "body-parser": "1.15.0",
+    "cors": "2.7.1",
+    "cross-env": "5.1.0",
+    "ejs": "2.4.1",
+    "errorhandler": "1.4.3",
+    "express": "4.16.2",
+    "jsonwebtoken": "7.1.9",
+    "method-override": "2.3.5",
+    "methods": "1.1.2",
+    "morgan": "1.7.0",
+    "nodemailer": "4.4.0",
+    "request": "2.69.0",
+    "slug": "0.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.2"
+  }
+}
